@@ -1,0 +1,317 @@
+html {
+    background-color: black;
+
+}
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    margin: 40px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: transparent;
+    width: 1840px;
+}
+
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header a {
+    color: #fafafa;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header a:hover {
+    text-decoration-line: underline;
+    text-decoration-color: rgba(123, 255, 143, 1);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 4px;
+    text-underline-position: under;
+}
+header a.active {
+    text-decoration-line: underline;
+    text-decoration-color: rgba(123, 255, 143, 1);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 4px;
+    text-underline-position: under;
+  } 
+.my_photo {
+    width: 40px;
+    height: auto;
+    border-radius: 100%;
+    padding: 0px;
+}
+
+.Page_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4fr 1fr 2fr;
+    column-gap: 40px;
+    width: 1840px;
+    height: 100vh;
+}
+.portfolio {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    text-transform: uppercase;
+    font-size: 296px;
+    margin: 190px 0px 0px -20px;
+}
+@media screen and (max-width: 920px) {
+    .Page_main, header {
+        width: 920px;
+    }
+    .portfolio {
+        font-size: 148px;
+    }
+
+    .back_portfolio {
+        font-size: 148px;
+    }
+    .Page_examples {
+        width: 920px;
+    }
+} 
+
+.Main_text {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    margin-right: -20px;
+    padding: 0px;
+}
+
+.click {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    width: 430px;
+    height: 80px;
+    background-color: rgba(123, 255, 143, 1);
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+    border-radius: 8px;
+
+}
+.Page_examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    column-gap: 40px;
+    width: 1840px;
+    height: 100vh;
+}
+
+.Example_1, .Example_2, .Example_3, .Example_4 {
+    border-radius: 8px;
+}
+
+.Progects {
+    text-decoration-line: underline;
+    text-decoration-color: rgba(123, 255, 143, 1);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 4px;
+    text-underline-position: under;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 40px;
+    width: fit-content;
+    padding-top: 8px;
+}
+
+.sum {
+    background-color: rgba(30, 30, 30, 1);
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    justify-self: end;
+    height: 28px;
+    width: fit-content;
+    padding: 8px 12px 8px 12px;
+    border-radius: 8px;
+}
+
+.Example_1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    background-color: rgba(30, 30, 30, 1);
+    font-size: 16px;
+    border-radius: 8px;
+}
+.Example_1 p:last-child {
+    font-size: 14px;
+    color: rgba(202, 202, 202, 1);
+    margin-top: -10px;
+}
+    
+.Example_2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    background-color: rgba(30, 30, 30, 1);
+    font-size: 16px;
+    
+}
+.Example_2 p:last-child {
+    font-size: 14px;
+    color: rgba(202, 202, 202, 1);
+    margin-top: -10px;
+
+}
+.Example_3 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    background-color: rgba(30, 30, 30, 1);
+    font-size: 16px;
+    
+}
+.Example_3 p:last-child {
+    font-size: 14px;
+    color: rgba(202, 202, 202, 1);
+    margin-top: -10px;
+
+}
+.Example_4 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    background-color: rgba(30, 30, 30, 1);
+    font-size: 16px;
+    
+}
+.Example_4 p:last-child {
+    font-size: 14px;
+    color: rgba(202, 202, 202, 1);
+    margin-top: -10px;
+}
+.back_portfolio {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+    text-transform: uppercase;
+    font-size: 296px;
+    margin: 20px 0px -80px -20px;
+    opacity: .1;
+    height: fit-content;
+    line-height: 1;
+    align-self: center;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 40px;
+    width: 1840px;
+    height: 90vh;
+}
+.contacts {
+    text-decoration-line: underline;
+    text-decoration-color: rgba(123, 255, 143, 1);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 4px;
+    text-underline-position: under;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 100px;
+    width: fit-content;
+    padding-top: 180px;
+}
+
+.words {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    justify-self: start;
+    height: 28px;
+    width: fit-content;
+    padding-top: 180px;
+    border-radius: 8px;
+    margin-right: -20px;
+}
+.Back_ID {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    text-transform: uppercase;
+    font-size: 296px;
+    margin: 0px 0px 0px -20px;
+    opacity: .1;
+    height: fit-content;
+    line-height: 1;
+    
+}
+.connect {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    justify-self: start;
+    height: 28px;
+    width: fit-content;
+    padding: 40px 0px;
+    border-radius: 8px;
+    margin-right: -20px;
+}
+.social {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    justify-self: start;
+    align-self: end;
+    height: fit-content;
+    width: fit-content;
+    padding: 0px;
+    border-radius: 8px;
+}
+footer a {
+text-decoration: none;
+}
+
+@media screen and (max-width: 920px) {
+    .Page_main, header, .Page_examples, footer {
+        width: 920px;
+    }
+    .portfolio, .back_portfolio, .Back_ID {
+        font-size: 148px;
+    }
+    .connect {
+        padding: 0px;
+    }
+    .Example_3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        margin-top: 8px;
+    }
+    .Example_4 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        margin-top: 8px;
+    }
+    .back_portfolio {
+        grid-row: 4 / 5;
+    }
+    .sum {
+        grid-column: 2 / 3;
+    }
+} 
