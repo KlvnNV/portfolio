@@ -10,9 +10,15 @@ function PostForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+if (!title || !body ) {
+ alert('Заполните все поля!');
+ return;
+ }
+
     axios.post('http://localhost:5000/api/posts', { title, body })
       .then(response => {
         alert('Пост добавлен');
+         window.location.reload();
       })
       .catch(error => {
         console.error('Ошибка:', error);
@@ -36,7 +42,7 @@ function PostForm() {
         onChange={(e) => setBody(e.target.value)}
 />
       </InputGroup>     */}
-      <div>
+      <div className="input-field">
       <input
         type="text"
         placeholder="Заголовок"
@@ -44,15 +50,14 @@ function PostForm() {
         onChange={(e) => setTitle(e.target.value)}
       />
       </div>
-      <div>
+      <div className="input-field">
       <textarea
         placeholder="Текст поста"
         value={body}
         onChange={(e) => setBody(e.target.value)}
       />
       </div>
-      <button type="submit" className='click'>Добавить пост</button>
-      {/* <Button type="submit" variant="outline-success" size="lg">Добавить пост</Button> */}
+      <button type="submit" className='click2'>Добавить пост</button>
     </form>
   );
 }

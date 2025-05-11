@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import React from "react";
+// import React from "react";
 import photo from "./../images/photo.jpg";
 import "./../styles/style.css";
 
@@ -14,7 +14,7 @@ function First() {
                     <div>Клявин Николай</div>
                 </div>
                 <nav>
-                    <Link to='/'>Главная</Link>
+                    <Link to='/' className='P_active'>Главная</Link>
                     <Link to='/projects'>Проекты</Link>
                     <Link to='/contacts'>Контакты</Link>
                 </nav>
@@ -26,12 +26,9 @@ function First() {
                     представления своей работы, достижений или увлечений
                 </div>
                 <div className='click'>
-                    
-                        <Link to='/apppost'>
-                        <button className='click'>Обсудить</button>
-                          </Link>
-                        {/* <button className='click'>Обсудить</button> */}
-                    
+                    <Link to='/apppost'>
+                        <button className='click' >Обсудить</button>
+                    </Link>
                 </div>
             </div>
         </>
