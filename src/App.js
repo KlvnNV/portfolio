@@ -1,4 +1,3 @@
-import React from 'react';
 import { HashRouter, Routes, Route } from "react-router-dom";
 import First from "./pages/first";
 import Projects from "./pages/projects";
@@ -21,18 +20,3 @@ function App() {
 
 export default App;
 
-// import React from 'react';
-
-// import PostForm from './pages/post/PostForm';
-// import PostList from './pages/post/PostList';
-
-// function App() {
-//     return (
-//         <div className='App'>
-//             <PostList />
-//             <PostForm />
-//         </div>
-//     );
-// }
-
-// export default App;
