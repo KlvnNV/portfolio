@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import ButtonBack from "../../components/ButtonBack";
+
 
 function PostList() {
     const [posts, setPosts] = useState([]);
@@ -44,9 +46,11 @@ function PostList() {
                     <li key={post.id}>
                         <h3>{post.title}</h3>
                         <p>{post.body}</p>
-                        <button className='click2' onClick={() => handleDeletePost(post.id)}>
+                        <ButtonBack  onClick={() => handleDeletePost(post.id)} name='Удалить'/>
+
+                        {/* <button className='click2' onClick={() => handleDeletePost(post.id)}>
                             Удалить
-                        </button>
+                        </button> */}
                     </li>
                 ))}
             </ul>

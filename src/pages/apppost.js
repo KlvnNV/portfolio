@@ -1,16 +1,19 @@
 // import React from 'react';
-import PostForm from './post/PostForm';
-import PostList from './post/PostList';
-import ButtonBack from '../components/ButtonBack';
+import { Link } from "react-router-dom";
+
+import PostForm from "./post/PostForm";
+import PostList from "./post/PostList";
+import ButtonBack from "../components/ButtonBack";
 
 function AppPost() {
     return (
         <div className='Page_examples'>
             <PostForm />
             <PostList />
-            <ButtonBack/>
-            
-  </div>
+                <Link to='../' className='sum2'>
+                    <ButtonBack name='Назад' />
+                </Link>
+        </div>
     );
 }
 

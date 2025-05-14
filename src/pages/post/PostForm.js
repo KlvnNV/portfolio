@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import ButtonBack from '../../components/ButtonBack';
 
 function PostForm() {
   const [title, setTitle] = useState('');
@@ -39,7 +40,9 @@ if (!title || !body ) {
         onChange={(e) => setBody(e.target.value)}
       />
       </div>
-      <button type="submit" className='click2'>Добавить пост</button>
+            <ButtonBack type="submit" name='Добавить пост' />
+
+      {/* <button type="submit" className='click2'>Добавить пост</button> */}
     </form>
   );
 }
