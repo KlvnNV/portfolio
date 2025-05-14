@@ -1,31 +1,15 @@
-
-
-
-
 import "./../styles/style.css";
-
+import SocialLink from "./SocialLink";
 
 function Social() {
     return (
-                <div className='social'>
-                    <ul style={{ liststyle: "none", paddingleft: "0px" }}>
-                        <li>
-                            <a style={{ color: "white" }} href='#'>
-                                ТЕЛЕФОН
-                            </a>
-                        </li>
-                        <li>
-                            <a style={{ color: "white" }} href='#'>
-                                ТЕЛЕГРАММ
-                            </a>
-                        </li>
-                        <li>
-                            <a style={{ color: "white" }} href='#'>
-                                ПОЧТА
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div className='social'>
+            <ul style={{ listStyleType: "none", paddingLeft: "0px" }}>
+                <SocialLink name='ТЕЛЕФОН' />
+                <SocialLink name='ТЕЛЕГРАММ' />
+                <SocialLink name='ПОЧТА' />
+            </ul>
+        </div>
     );
 }
 

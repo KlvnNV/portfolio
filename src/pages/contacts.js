@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import Social from "./../components/Social";
 import ButtonBack from "../components/ButtonBack";
+import BigText from "../components/BigText";
 
 function Contacts() {
     return (
@@ -13,7 +14,7 @@ function Contacts() {
                 <Link to='../' className='sum2'>
                     <ButtonBack name='Назад' />
                 </Link>
-                <div className='Back_ID'>КЛЯВИН</div>
+                <BigText className='Back_ID' name='КЛЯВИН'/>
                 <div className='connect'>Связь</div>
                 <Social />
             </footer>

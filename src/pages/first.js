@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import photo from "./../images/photo.jpg";
 import "./../styles/style.css";
+import BigText from "../components/BigText";
 
 function First() {
     return (
@@ -19,7 +20,8 @@ function First() {
                 </nav>
             </header>
             <div className='Page_main'>
-                <div className='portfolio'>портфолио</div>
+                <BigText className='portfolio' name='портфолио'/>
+                
                 <div className='Main_text'>
                     Занимаюсь разработкой макета простого сайта-портфолио для
                     представления своей работы, достижений или увлечений
